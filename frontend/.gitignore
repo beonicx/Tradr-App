@@ -1,0 +1,17 @@
+# Node
+node_modules/
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+
+# iOS
+ios/Pods/
+ios/build/
+ios/.xcode.env.local
+
+# Misc
+.env
+.env.local
