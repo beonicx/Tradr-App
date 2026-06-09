@@ -16,9 +16,6 @@ const config = {
   enableAnalytics: ENABLE_ANALYTICS === 'true',
 };
 
-// Named exports for convenience
-export const apiBaseUrl = config.apiBaseUrl;
-export const socketUrl = config.socketUrl;
 export const isDevelopment = config.env === 'development';
 export const isStaging = config.env === 'staging';
 export const isProduction = config.env === 'production';

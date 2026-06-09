@@ -15,6 +15,11 @@ ios/.xcode.env.local
 # Misc
 .env
 .env.local
+.env.*.local
+!.env.example
+!.env.development
+!.env.staging
+!.env.production
 
 # Android Studio
 *.iml

@@ -6,6 +6,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Toast from 'react-native-toast-message';
 import store from './src/store';
 import AppNavigator from './src/navigation';
+import { testBackendConnection } from './src/utils/connectionTest';
 
 LogBox.ignoreLogs([
   'Non-serializable values were found in the navigation state',
@@ -13,6 +14,18 @@ LogBox.ignoreLogs([
 ]);
 
 const App = () => {
+  useEffect(() => {
+    // Test backend connection on app startup
+    console.log('🔍 Starting backend connection test...');
+    testBackendConnection().then(result => {
+      if (result.success) {
+        console.log('✅ App is ready - backend connection successful!');
+      } else {
+        console.error('⚠️ Backend connection failed - check logs above');
+      }
+    });
+  }, []);
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>

@@ -3,9 +3,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import store from '../store';
 import { updateLivePrice } from '../store/slices/marketSlice';
 import { updateHoldingPrice } from '../store/slices/portfolioSlice';
-import { SOCKET_URL } from '../config/env';
+import config from '../config/env';
 
-const SOCKET_BASE_URL = SOCKET_URL;
+const SOCKET_BASE_URL = config.socketUrl;
 
 class SocketService {
   constructor() {

@@ -21,7 +21,19 @@ export const login = createAsyncThunk('auth/login', async (credentials, { reject
 
 export const register = createAsyncThunk('auth/register', async (userData, { rejectWithValue }) => {
   try {
-    const response = await api.post('/auth/register', userData);
+    console.log('🔐 Registering user:', userData.email);
+
+    // Clean up userData - remove empty phone
+    const cleanData = { ...userData };
+    if (cleanData.phone === '' || cleanData.phone === null || cleanData.phone === undefined) {
+      delete cleanData.phone;
+    }
+
+    console.log('   Sending data:', { ...cleanData, password: '[HIDDEN]' });
+
+    const response = await api.post('/auth/register', cleanData);
+    console.log('✅ Registration successful:', response.data.user?.email);
+
     const { accessToken, refreshToken, user } = response.data;
     await AsyncStorage.multiSet([
       ['accessToken', accessToken],
@@ -30,7 +42,25 @@ export const register = createAsyncThunk('auth/register', async (userData, { rej
     ]);
     return response.data;
   } catch (error) {
-    return rejectWithValue(error.response?.data || { error: 'Registration failed' });
+    console.error('❌ Registration failed:', error.message);
+    console.error('   Response:', error.response?.data);
+    console.error('   Status:', error.response?.status);
+
+    // Extract specific error message
+    let errorMessage = 'Registration failed';
+    if (error.response?.data?.error) {
+      errorMessage = error.response.data.error;
+    } else if (error.response?.data?.details) {
+      // Validation errors
+      const details = error.response.data.details;
+      errorMessage = details.map(d => d.message || d.msg).join(', ');
+    } else if (error.message === 'Network Error' || error.code === 'ECONNREFUSED') {
+      errorMessage = 'Cannot connect to server. Please check your connection.';
+    } else if (error.message) {
+      errorMessage = error.message;
+    }
+
+    return rejectWithValue({ error: errorMessage });
   }
 });
 

@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* TradingAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TradingAppTests.m */; };
+		1042AB45FCDA0F4E4C807679 /* libPods-TradingApp-TradingAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA5A0F9B17B77FA9239F437 /* libPods-TradingApp-TradingAppTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		6D6014910E26C9E3914AC5B4 /* libPods-TradingApp-TradingAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56697096C8ACB3CD9E0167E0 /* libPods-TradingApp-TradingAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		D9E9017CF37736F6A4641710 /* libPods-TradingApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EBF8914462223B589F003F /* libPods-TradingApp.a */; };
+		98B8C45B25BE7651326F5F00 /* libPods-TradingApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C8BAFC7D4A31A9B4425DAF /* libPods-TradingApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		009C759B7C634A308135F32D /* Pods-TradingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingApp.release.xcconfig"; path = "Target Support Files/Pods-TradingApp/Pods-TradingApp.release.xcconfig"; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* TradingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TradingAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TradingAppTests.m; sourceTree = "<group>"; };
@@ -36,13 +37,12 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TradingApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TradingApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TradingApp/main.m; sourceTree = "<group>"; };
-		1B32BE42BFCA8DEDC229A70F /* Pods-TradingApp-TradingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingApp-TradingAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TradingApp-TradingAppTests/Pods-TradingApp-TradingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		38208ED222F4810A5E308B9B /* Pods-TradingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingApp.debug.xcconfig"; path = "Target Support Files/Pods-TradingApp/Pods-TradingApp.debug.xcconfig"; sourceTree = "<group>"; };
-		56697096C8ACB3CD9E0167E0 /* libPods-TradingApp-TradingAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TradingApp-TradingAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79EBF8914462223B589F003F /* libPods-TradingApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TradingApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C8BAFC7D4A31A9B4425DAF /* libPods-TradingApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TradingApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD0B3884313625BA35F11C9 /* Pods-TradingApp-TradingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingApp-TradingAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TradingApp-TradingAppTests/Pods-TradingApp-TradingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DA5A0F9B17B77FA9239F437 /* libPods-TradingApp-TradingAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TradingApp-TradingAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		532E13E7931D3222B30CC5C6 /* Pods-TradingApp-TradingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingApp-TradingAppTests.release.xcconfig"; path = "Target Support Files/Pods-TradingApp-TradingAppTests/Pods-TradingApp-TradingAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TradingApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		96072ABD32F0BA33CDB0A470 /* Pods-TradingApp-TradingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingApp-TradingAppTests.release.xcconfig"; path = "Target Support Files/Pods-TradingApp-TradingAppTests/Pods-TradingApp-TradingAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		E972A40C912015FA95A29382 /* Pods-TradingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingApp.release.xcconfig"; path = "Target Support Files/Pods-TradingApp/Pods-TradingApp.release.xcconfig"; sourceTree = "<group>"; };
+		D45929BA872F86D236AACF5B /* Pods-TradingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingApp.debug.xcconfig"; path = "Target Support Files/Pods-TradingApp/Pods-TradingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D6014910E26C9E3914AC5B4 /* libPods-TradingApp-TradingAppTests.a in Frameworks */,
+				1042AB45FCDA0F4E4C807679 /* libPods-TradingApp-TradingAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9E9017CF37736F6A4641710 /* libPods-TradingApp.a in Frameworks */,
+				98B8C45B25BE7651326F5F00 /* libPods-TradingApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				79EBF8914462223B589F003F /* libPods-TradingApp.a */,
-				56697096C8ACB3CD9E0167E0 /* libPods-TradingApp-TradingAppTests.a */,
+				16C8BAFC7D4A31A9B4425DAF /* libPods-TradingApp.a */,
+				3DA5A0F9B17B77FA9239F437 /* libPods-TradingApp-TradingAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				38208ED222F4810A5E308B9B /* Pods-TradingApp.debug.xcconfig */,
-				E972A40C912015FA95A29382 /* Pods-TradingApp.release.xcconfig */,
-				1B32BE42BFCA8DEDC229A70F /* Pods-TradingApp-TradingAppTests.debug.xcconfig */,
-				96072ABD32F0BA33CDB0A470 /* Pods-TradingApp-TradingAppTests.release.xcconfig */,
+				D45929BA872F86D236AACF5B /* Pods-TradingApp.debug.xcconfig */,
+				009C759B7C634A308135F32D /* Pods-TradingApp.release.xcconfig */,
+				2BD0B3884313625BA35F11C9 /* Pods-TradingApp-TradingAppTests.debug.xcconfig */,
+				532E13E7931D3222B30CC5C6 /* Pods-TradingApp-TradingAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TradingAppTests" */;
 			buildPhases = (
-				2E7AD1D0AE735565CAC309B7 /* [CP] Check Pods Manifest.lock */,
+				80B235878BD47AE085C4F8F4 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				1912E488DAE94B009EC315E3 /* [CP] Embed Pods Frameworks */,
-				D26BDB326DE3AF399FA5D217 /* [CP] Copy Pods Resources */,
+				EA4290A997B030C6218D4AB0 /* [CP] Embed Pods Frameworks */,
+				B0B9F63085BC87682E0E846A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +176,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TradingApp" */;
 			buildPhases = (
-				B72D0F5FB6B3881444D12DF0 /* [CP] Check Pods Manifest.lock */,
+				7634E603E4C041EE04CCC857 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				7E3FF50D8F901B393526444E /* [CP] Embed Pods Frameworks */,
-				E778CB73A386D8BE51B2D417 /* [CP] Copy Pods Resources */,
+				49C854B7D6EF5C5146A77A47 /* [CP] Embed Pods Frameworks */,
+				054D7E168043DD3AAA0788AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,46 +266,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		1912E488DAE94B009EC315E3 /* [CP] Embed Pods Frameworks */ = {
+		054D7E168043DD3AAA0788AD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TradingApp-TradingAppTests/Pods-TradingApp-TradingAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TradingApp/Pods-TradingApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TradingApp-TradingAppTests/Pods-TradingApp-TradingAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TradingApp/Pods-TradingApp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradingApp-TradingAppTests/Pods-TradingApp-TradingAppTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradingApp/Pods-TradingApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2E7AD1D0AE735565CAC309B7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TradingApp-TradingAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7E3FF50D8F901B393526444E /* [CP] Embed Pods Frameworks */ = {
+		49C854B7D6EF5C5146A77A47 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,7 +300,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradingApp/Pods-TradingApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B72D0F5FB6B3881444D12DF0 /* [CP] Check Pods Manifest.lock */ = {
+		7634E603E4C041EE04CCC857 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,7 +322,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D26BDB326DE3AF399FA5D217 /* [CP] Copy Pods Resources */ = {
+		80B235878BD47AE085C4F8F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TradingApp-TradingAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B9F63085BC87682E0E846A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,21 +361,21 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradingApp-TradingAppTests/Pods-TradingApp-TradingAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E778CB73A386D8BE51B2D417 /* [CP] Copy Pods Resources */ = {
+		EA4290A997B030C6218D4AB0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TradingApp/Pods-TradingApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TradingApp-TradingAppTests/Pods-TradingApp-TradingAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TradingApp/Pods-TradingApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TradingApp-TradingAppTests/Pods-TradingApp-TradingAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradingApp/Pods-TradingApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TradingApp-TradingAppTests/Pods-TradingApp-TradingAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -430,7 +430,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B32BE42BFCA8DEDC229A70F /* Pods-TradingApp-TradingAppTests.debug.xcconfig */;
+			baseConfigurationReference = 2BD0B3884313625BA35F11C9 /* Pods-TradingApp-TradingAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -457,7 +457,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96072ABD32F0BA33CDB0A470 /* Pods-TradingApp-TradingAppTests.release.xcconfig */;
+			baseConfigurationReference = 532E13E7931D3222B30CC5C6 /* Pods-TradingApp-TradingAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -481,7 +481,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38208ED222F4810A5E308B9B /* Pods-TradingApp.debug.xcconfig */;
+			baseConfigurationReference = D45929BA872F86D236AACF5B /* Pods-TradingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -508,7 +508,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E972A40C912015FA95A29382 /* Pods-TradingApp.release.xcconfig */;
+			baseConfigurationReference = 009C759B7C634A308135F32D /* Pods-TradingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

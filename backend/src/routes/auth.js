@@ -14,7 +14,7 @@ router.post(
       .isLength({ min: 8 })
       .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/)
       .withMessage('Password must be 8+ chars with uppercase, lowercase and number'),
-    body('phone').optional().isMobilePhone().withMessage('Valid phone number required'),
+    body('phone').optional({ values: 'falsy' }).isMobilePhone().withMessage('Valid phone number required'),
   ],
   validate,
   authController.register

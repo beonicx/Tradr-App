@@ -36,8 +36,11 @@ const RegisterScreen = ({ navigation }) => {
     }
   }, [error]);
 
-  const handleRegister = () => {
+  const handleRegister = async () => {
     const { firstName, lastName, email, password, confirmPassword, phone } = formData;
+
+    console.log('📝 Register button pressed');
+    console.log('Form data:', { firstName, lastName, email, phone: phone || '(empty)' });
 
     if (!firstName.trim() || !lastName.trim() || !email.trim() || !password.trim()) {
       Toast.show({ type: 'error', text1: 'Error', text2: 'All fields except phone are required' });
@@ -70,12 +73,20 @@ const RegisterScreen = ({ navigation }) => {
       password,
     };
 
-    if (phone.trim()) {
+    // Only include phone if it's not empty
+    // Backend validation requires valid phone format if present
+    if (phone && phone.trim()) {
       userData.phone = phone.trim();
     }
 
+    console.log('✅ Validation passed, dispatching register action');
+    console.log('   User data:', {
+      ...userData,
+      password: '[HIDDEN]',
+    });
     dispatch(register(userData));
   };
+
 
   const updateField = (field, value) => {
     setFormData((prev) => ({ ...prev, [field]: value }));

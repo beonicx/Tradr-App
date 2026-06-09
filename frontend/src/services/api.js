@@ -1,8 +1,12 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { API_BASE_URL } from '../config/env';
+import config from '../config/env';
 
-const BASE_URL = API_BASE_URL;
+const BASE_URL = config.apiBaseUrl;
+
+console.log('🔧 API Service Initialized');
+console.log('   Base URL:', BASE_URL);
+console.log('   Config:', config);
 
 const api = axios.create({
   baseURL: BASE_URL,
@@ -11,17 +15,37 @@ const api = axios.create({
 });
 
 api.interceptors.request.use(
-  async (config) => {
+  async (reqConfig) => {
+    console.log('📤 API Request:', reqConfig.method?.toUpperCase(), reqConfig.url);
+    console.log('   Full URL:', reqConfig.baseURL + reqConfig.url);
+    console.log('   Data:', JSON.stringify(reqConfig.data, null, 2));
+
     const token = await AsyncStorage.getItem('accessToken');
-    if (token) config.headers.Authorization = `Bearer ${token}`;
-    return config;
+    if (token) {
+      reqConfig.headers.Authorization = `Bearer ${token}`;
+      console.log('   Token: Added');
+    }
+    return reqConfig;
   },
-  (error) => Promise.reject(error)
+  (error) => {
+    console.error('❌ Request interceptor error:', error);
+    return Promise.reject(error);
+  }
 );
 
 api.interceptors.response.use(
-  (response) => response,
+  (response) => {
+    console.log('✅ API Response:', response.config.method?.toUpperCase(), response.config.url);
+    console.log('   Status:', response.status);
+    console.log('   Data:', JSON.stringify(response.data, null, 2).substring(0, 200));
+    return response;
+  },
   async (error) => {
+    console.error('❌ API Error:', error.config?.method?.toUpperCase(), error.config?.url);
+    console.error('   Status:', error.response?.status);
+    console.error('   Message:', error.message);
+    console.error('   Response:', JSON.stringify(error.response?.data, null, 2));
+
     const original = error.config;
     if (
       error.response?.status === 401 &&
@@ -39,7 +63,8 @@ api.interceptors.response.use(
         ]);
         original.headers.Authorization = `Bearer ${accessToken}`;
         return api(original);
-      } catch {
+      } catch (refreshError) {
+        console.error('❌ Token refresh failed:', refreshError);
         await AsyncStorage.multiRemove(['accessToken', 'refreshToken', 'user']);
       }
     }
