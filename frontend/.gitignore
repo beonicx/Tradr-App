@@ -15,3 +15,12 @@ ios/.xcode.env.local
 # Misc
 .env
 .env.local
+
+# Android Studio
+*.iml
+.idea/
+.gradle
+local.properties
+
+# Setup scripts backup
+*.backup
